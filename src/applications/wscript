@@ -4,6 +4,7 @@ def build(bld):
     module = bld.create_ns3_module('applications', ['internet', 'config-store','stats'])
     module.source = [
         'model/bulk-send-application.cc',
+        'model/gossip-generator.cc',
         'model/onoff-application.cc',
         'model/packet-sink.cc',
         'model/ping6.cc',
@@ -38,6 +39,7 @@ def build(bld):
     headers.module = 'applications'
     headers.source = [
         'model/bulk-send-application.h',
+        'model/gossip-generator.h',
         'model/onoff-application.h',
         'model/packet-sink.h',
         'model/ping6.h',
